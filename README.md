@@ -21,3 +21,21 @@ kubectl port-forward --address 0.0.0.0 pod/web 8000:8000
 ### Запустить фронт Hipster shop и разрабораться с ошибкой
 Под не запускался из-за отсутсвия переменных окружений.
 
+## Домашняя работа 2
+### Почему ReplicaSet не обновляет запущенные поды
+Replicaset не следит за соответсвие подов шаблону, только за количество запущенных реплик
+
+### Написать ReplicaSet  и Deployment для frontend и payment 
+Созданы yaml файлы с описанием 
+
+### Написать blue-green и reverse обновление с параметрами maxUnavailable maxSurge
+Созданы yaml файлы с описанием, bg - paymentservice-deployment-bg, reverse - paymentservice-deployment-reverse
+
+### Probes
+Добавлен в  frontend-deployment
+
+### DaemonSet Node-Exporter
+Создан yaml node-exporter-daemonset
+
+### DaemonSet на master
+Добавлен параметр tolerations в node-exporter-daemonset
