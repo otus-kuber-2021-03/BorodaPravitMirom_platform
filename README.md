@@ -39,3 +39,4 @@ Replicaset не следит за соответсвие подов шаблон
 
 ### DaemonSet на master
 Добавлен параметр tolerations в node-exporter-daemonset
+#Test
