@@ -54,3 +54,17 @@ Replicaset не следит за соответсвие подов шаблон
 Создан сервисный jane аккаунт с правам админа в рамках ns dev
 Создан сервисный аккаунт ken с правами на просмотр в рамках ns dev
 
+## Домашняя работа 4
+
+###Применить statefulset
+
+Применил minio-statefulset.yaml
+
+###Применить service
+
+Применил minio-headless-service.yaml
+
+###Создать secret
+
+Создал secret обявил их в statefulset
+
