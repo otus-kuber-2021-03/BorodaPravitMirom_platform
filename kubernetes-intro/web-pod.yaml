@@ -7,7 +7,17 @@ metadata:
 spec:
   containers: 
   - name: web
-    image: borodapravitmirom/webotus:1 
+    image: borodapravitmirom/webotus:1
+    readinessProbe:
+      httpGet:
+        path: /index.html
+        port: 8000
+    livenessProbe:
+      httpGet:
+        path: /index.html
+        port: 8000
+      initialDelaySeconds: 5
+      periodSeconds: 5
     volumeMounts: 
        - name: app
          mountPath: /app
