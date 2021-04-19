@@ -22,11 +22,8 @@ spec:
       - name: web
         image: xunder/testweb:2.0
         livenessProbe:
-          httpGet:
-            path: /index.html
+          tcpSocket:
             port: 8000
-          initialDelaySeconds: 5
-          periodSeconds: 5
         readinessProbe:
           httpGet:
             path: /index.html
