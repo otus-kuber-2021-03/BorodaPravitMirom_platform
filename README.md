@@ -69,5 +69,23 @@ Replicaset не следит за соответсвие подов шаблон
 Создал secret обявил их в statefulset
 
 ## Домашняя работа 5
+Выполены ДЗ 
 
+## Домашняя работа 6
 
+### Certmanager
+
+Создать ClusterIssuer
+
+### Chartmuseum
+
+Сертификат получен
+
+### Chartmuseum *
+Загрузка 
+helm package .
+curl --data-binary "@mychart-0.1.0.tgz" https://chartmuseum.34.123.97.185.nip.io/api/charts
+
+Установка
+helm repo add chartmuseum https://chartmuseum.34.123.97.185.nip.io
+helm install chartmuseum/mychart --generate-name
