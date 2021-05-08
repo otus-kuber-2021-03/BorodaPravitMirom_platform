@@ -89,3 +89,6 @@ curl --data-binary "@mychart-0.1.0.tgz" https://chartmuseum.34.123.97.185.nip.io
 Установка
 helm repo add chartmuseum https://chartmuseum.34.123.97.185.nip.io
 helm install chartmuseum/mychart --generate-name
+
+## Домашняя работа 7
+Done HW
