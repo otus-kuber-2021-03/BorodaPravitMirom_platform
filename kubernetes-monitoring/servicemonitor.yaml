@@ -1,0 +1,12 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: webmonitoring
+  labels:
+    team: frontend
+spec:
+  selector:
+    matchLabels:
+      app: webmonitoring
+  endpoints:
+  - port: exporter
